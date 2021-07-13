@@ -1,0 +1,12 @@
+<div class="container">
+    <h5>Notification</h5>
+    <small>Notification will be updated in {{countDown}} seconds</small>
+    <hr>
+    <div class="notification-wrapper">
+        <div class="card mb-2" *ngFor="let item of notificationData">
+            <small class="time">{{item?.timeSpan | date: 'dd MMM YYYY'}}</small>
+            <div class="m-2">{{item?.invite}}</div>
+            <h6 class="sender-info">Invited by <span>{{item?.sender_id | titlecase}}</span></h6>
+        </div>
+    </div>
+</div>

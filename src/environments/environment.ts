@@ -5,8 +5,7 @@
 export const environment = {
   production: false,
   environmentName: 'dev',
-  // apiUrl: 'http://localhost:5000/api/v1/',
-  apiUrl: 'https://amethyst-gusty-butternut.glitch.me/api/v1/',
+  apiUrl: 'http://localhost:5000/api/v1/',
 };
 
 /*

@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  apiUrl: 'https://amethyst-gusty-butternut.glitch.me/api/v1/',
 };

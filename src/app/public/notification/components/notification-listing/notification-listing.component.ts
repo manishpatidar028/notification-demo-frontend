@@ -53,7 +53,7 @@ export class NotificationListingComponent implements OnInit, OnDestroy {
     const response: any = await this.apiService.get(NOTIFICATION_ROUTES.GET_UPDATED_NOTIFICATION);
     this.notificationData = response.invites;
     this.notificationData.forEach(element => {
-      element.timeSpan = this.utilService.getDate(element.created_at);
+      element.timeSpan = this.utilService.getDate(element.invite_time);
       return element;
     });
     /* To sort data if we need user wise data here i have confusion in requirements so just commented */
